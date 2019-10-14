@@ -7,10 +7,8 @@ tags:
 categories:
     - hexo使用
 ---
-
-
-使用Hexo + GitHub搭建博客，在username.github.io仓库下存储的仅是public文件夹下的静态文件，那我们得如何才能保存hexo的一些具体配置文件呢？在需要更换配置主机时显得尤为重要。在此，根据网络搜索及个人实践，将一些基本步骤记录下来。
-
+使用Hexo+GitHub搭建博客，在username.github.io仓库下存储的仅是public文件夹下的静态文件，那我们得如何才能保存hexo的一些具体配置文件呢？在需要更换配置主机时显得尤为重要。在此，根据网络搜索及个人实践，将一些基本步骤记录下来。
+<!-- more -->
 ## 前期准备
 前提需要已经创建好username.github.io仓库，在此需要注意的是在主配置文件<font color='red'>_config.yml</font>已经配置好分支属性为master，如下所示
 <br>
