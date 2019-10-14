@@ -372,23 +372,7 @@
   
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-
-Quick Start
-Create a new post
-1
-
-
-$ hexo new "My New Post"
-
-
-More info: Writing
-
-Run server
-1
-
-
-$ hexo s
+      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. </p>
       
         <div class="readmore">
           <a href="/2019/10/14/hello-world/" class="flat-box">
@@ -515,22 +499,7 @@ $ hexo s
   
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      使用Hexo+GitHub搭建博客，在username.github.io仓库下存储的仅是public文件夹下的静态文件，那我们得如何才能保存hexo的一些具体配置文件呢？在需要更换配置主机时显得尤为重要。在此，根据网络搜索及个人实践，将一些基本步骤记录下来。
-
-前期准备
-前提需要已经创建好username.github.io仓库，在此需要注意的是在主配置文件_config.yml已经配置好分支属性为master，如下所示
-
-
-
-1
-2
-3
-4
-
-
-deploy:
-  type: git
-  repo: https://github.com/{username}/{username}.gith
+      <p>使用Hexo+GitHub搭建博客，在username.github.io仓库下存储的仅是public文件夹下的静态文件，那我们得如何才能保存hexo的一些具体配置文件呢？在需要更换配置主机时显得尤为重要。在此，根据网络搜索及个人实践，将一些基本步骤记录下来。</p>
       
         <div class="readmore">
           <a href="/2019/10/14/如何备份Hexo博客/" class="flat-box">
@@ -1006,9 +975,27 @@ deploy:
     
     。
   </div>
+  <span class="post-count">字数统计：557</span>
+  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+	
 </footer>
 <script>setLoadingBarProgress(80);</script>
-
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("13/10/2019 17:38:00");//在此处修改你的建站时间
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+	setInterval("createtime()",250);
+</script>
 
 
 
