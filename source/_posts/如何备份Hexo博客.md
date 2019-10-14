@@ -2,6 +2,10 @@
 title: 如何备份Hexo博客
 date: 2019-10-14 12:50:29
 tags:
+    - hexo
+    - 博客
+categories:
+    - hexo使用
 ---
 
 

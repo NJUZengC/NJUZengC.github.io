@@ -59,7 +59,7 @@ backstretch:
 cover:
   scheme: search    # 后期将会提供多种封面方案
   height: half      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
-  title: Demo
+  title: 不要人夸好颜色
   # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
   # search_placeholder: '搜索'
   # 主页封面菜单
@@ -87,15 +87,15 @@ menu_desktop:
     url: /
   - name: 分类
     icon: fas fa-folder-open
-    url: blog/categories/
+    url: categories/
     rel: nofollow
   - name: 标签
     icon: fas fa-hashtag
-    url: blog/tags/
+    url: tags/
     rel: nofollow
   - name: 归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: archives/
     rel: nofollow
 
 # 手机端导航菜单（从右上角的按钮点击展开）
@@ -105,7 +105,7 @@ menu_mobile:
     url: /
   - name: 文章归档
     icon: fas fa-archive
-    url: blog/archives/
+    url: archives/
     rel: nofollow
   - name: 开源项目
     icon: fas fa-code-branch
@@ -129,7 +129,7 @@ layout:
     # 列表中每一篇文章的meta信息
     meta: [title, author, date, categories, top]
     # 列表类页面的侧边栏
-    sidebar: [author, list, grid, category, tagcloud]
+    sidebar: [author, category, tagcloud, grid, music]
   # 文章页面布局
   article:
     # 文章页面主体元素，你也可以在页面的Front-matter中设置
@@ -140,14 +140,14 @@ layout:
     header: [title, author, date, categories, counter, top]
     footer: [updated, tags, share]
     # 文章页面的侧边栏
-    sidebar: [author, toc, grid, category, tagcloud, list, related_posts]
+    sidebar: [author, toc, grid, category, music, list, related_posts]
   # 其他的页面布局暂时等于文章列表
 
 
 # 侧边栏小部件配置
 sidebar:
   - widget: author
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+    avatar: https://cdn.jsdelivr.net/gh/njuzengc/njuzengc.github.io@v0.1/customize/avatar.jpg
     social: true
   - widget: toc
   - widget: grid
@@ -159,7 +159,7 @@ sidebar:
         url: /
       - name: 文章归档
         icon: fas fa-archive
-        url: blog/archives/
+        url: archives/
         rel: nofollow
       - name: 开源项目
         icon: fas fa-code-branch
@@ -179,13 +179,13 @@ sidebar:
   - widget: category
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/categories/
+      url: categories/
       rel: nofollow
   - widget: tagcloud
     icon: fas fa-tags
     more:
       icon: fas fa-expand-arrows-alt
-      url: blog/tags/
+      url: tags/
       rel: nofollow
   # - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts
   - widget: music
@@ -193,26 +193,13 @@ sidebar:
     title: "最近在听"
     more:
       icon: far fa-heart
-      url: https://music.163.com/#/user/home?id=63035382
+      url: https://music.163.com/#/user/home?id=307422299
       rel: external nofollow noopener noreferrer
       target: _blank
     server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
     type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
-    id: 2615636388     # 歌曲/专辑/歌单 ID
-  - widget: list
-    icon: fas fa-thumbs-up
-    title: 强烈推荐
-    rows:
-      - name: Hexo脚本（Mac）
-        url: https://xaoxuu.com/wiki/hexo.sh/
-      - name: 图床脚本（Mac）
-        url: https://xaoxuu.com/wiki/vim-cn.sh/
-      - name: 图片在线压缩
-        url: https://yasuotu.com
-      - name: 生成Favicon
-        url: https://realfavicongenerator.net
-      - name: 简历主题
-        url: https://mxclub.github.io/resume/
+    id: 426784024     # 歌曲/专辑/歌单 ID
+  
 
 
 
@@ -221,11 +208,11 @@ social:
   - icon: fas fa-rss
     url: atom.xml
   - icon: fas fa-envelope
-    url: mailto:me@xaoxuu.com
+    url: mailto:njuzengc@foxmail.com
   - icon: fab fa-github
-    url: https://github.com/xaoxuu
+    url: https://github.com/njuzengc
   - icon: fas fa-headphones-alt
-    url: https://music.163.com/#/user/home?id=63035382
+    url: https://music.163.com/#/user/home?id=307422299
 
 
 # 分享按钮
