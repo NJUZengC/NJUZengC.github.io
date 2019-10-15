@@ -5,7 +5,7 @@
 # Site
 title: 不要人夸好颜色
 subtitle: 随便聊聊
-0description: 06年时代周刊风云人物,08年感动中国特别大奖
+description: 06年时代周刊风云人物,08年感动中国特别大奖
 keywords:
 author: 楚一川
 language: zh-CN
@@ -81,3 +81,9 @@ deploy:
   type: git
   repo:	https://github.com/NJUZengC/NJUZengC.github.io.git
   branch: master
+gitalk: 
+   clientID: a4fc86eabac03dc52a1e
+   clientSecret: 37fac8e75a82987db61f66bd7b39a39649084b1a
+   repo: njuzengc.github.io
+   owner: njuzengc
+   admin: [njuzengc] 
